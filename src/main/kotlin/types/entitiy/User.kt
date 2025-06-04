@@ -9,9 +9,6 @@ data class User(  // ← NoArg 플러그인 없으면 data class 피하는 게 �
     @Column(name = "ulid", length = 12, nullable = false)
     val ulid: String,
 
-    @Column(name = "platform", nullable = false, length = 25)
-    val platform: String,
-
     @Column(name = "username", nullable = false, unique = true, length = 50)
     val username: String,
 
