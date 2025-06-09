@@ -33,7 +33,7 @@ class AuthService(
         val username = (userInfo.name ?: userInfo.email).toString();
 
         transaction.run {
-            val exist = authUserRepository.existsByUsernameAndPlatform(username)
+            val exist = authUserRepository.existsByUsername(username)
 
             if(exist){
                 authUserRepository.updateAccessTokenByUsername(username, token)

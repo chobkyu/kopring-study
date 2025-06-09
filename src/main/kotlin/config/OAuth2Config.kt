@@ -12,5 +12,5 @@ class OAuth2Config {
 data class OAuth2ProviderValues(
     val clientId: String,
     val clientSecret: String,
-    val redirectUrl: String
+    val redirectUri: String
 )

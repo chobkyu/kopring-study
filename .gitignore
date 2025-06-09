@@ -30,7 +30,7 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-
+!**/src/main/resources/application.yaml
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -43,3 +43,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+application.yaml
