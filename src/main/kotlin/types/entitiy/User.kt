@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 @Table(name = "user")
 data class User(  // ← NoArg 플러그인 없으면 data class 피하는 게 낫습니다.
     @Id
-    @Column(name = "ulid", length = 12, nullable = false)
+    @Column(name = "ulid", length = 26, nullable = false)
     val ulid: String,
 
     @Column(name = "username", nullable = false, unique = true, length = 50)

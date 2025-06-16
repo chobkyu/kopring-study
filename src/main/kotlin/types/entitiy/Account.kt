@@ -8,7 +8,7 @@ import java.time.LocalDateTime
 @Table(name = "account")
 data class Account(  // ← NoArg 플러그인 없으면 data class 피하는 게 낫습니다.
     @Id
-    @Column(name = "ulid", length = 12, nullable = false)
+    @Column(name = "ulid", length = 26, nullable = false)
     val ulid: String,
 
     @ManyToOne(fetch = FetchType.LAZY)
