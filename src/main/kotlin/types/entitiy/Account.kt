@@ -2,6 +2,7 @@ package org.example.types.entitiy
 
 import jakarta.persistence.*
 import java.math.BigDecimal
+import java.time.LocalDate
 import java.time.LocalDateTime
 
 @Entity
@@ -29,4 +30,7 @@ data class Account(  // ← NoArg 플러그인 없으면 data class 피하는 �
 
     @Column(name="updated_at", nullable = false)
     var updatedAt: LocalDateTime = LocalDateTime.now(),
+
+    @Column(name="deleted_at")
+    var deletedAt: LocalDateTime? = null,
 )
